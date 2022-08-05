@@ -1,0 +1,40 @@
+export interface ITiledMapData{
+  compressionlevel:number,
+  height:number,
+  width:number,
+  infinite:boolean,
+  orientation:string,
+  renderorder:string,
+  tileheight:number,
+  tilwwidth:number,
+  type:string,
+  version:string, 
+  layers:ILayerData[],
+  tilsets:ITilesetData[],
+}
+
+export interface ITilesetData{
+  columns:number,
+  firstgid:number,
+  image:string, 
+  imageheight:number,
+  imahgewidth:number,
+  margin:number,
+  name:string, 
+  spacing:number,
+  tilecount:number,
+  tileheinght:number,
+  tilewidth:number,
+}
+export interface ILayerData{
+  id:number,
+  data:number[],
+  height:number,
+  width:number,
+  opacity:number,
+  name:string,
+  type:string,
+  visibility:boolean,
+  x:number,
+  y:number,
+}
