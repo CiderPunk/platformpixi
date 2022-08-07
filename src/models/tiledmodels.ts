@@ -6,11 +6,11 @@ export interface ITiledMapData{
   orientation:string,
   renderorder:string,
   tileheight:number,
-  tilwwidth:number,
+  tilewidth:number,
   type:string,
   version:string, 
   layers:ILayerData[],
-  tilsets:ITilesetData[],
+  tilesets:ITilesetData[],
 }
 
 export interface ITilesetData{
@@ -18,17 +18,17 @@ export interface ITilesetData{
   firstgid:number,
   image:string, 
   imageheight:number,
-  imahgewidth:number,
+  imagewidth:number,
   margin:number,
   name:string, 
   spacing:number,
   tilecount:number,
-  tileheinght:number,
+  tileheight:number,
   tilewidth:number,
 }
 export interface ILayerData{
   id:number,
-  data:number[],
+  data:Array<number>,
   height:number,
   width:number,
   opacity:number,
